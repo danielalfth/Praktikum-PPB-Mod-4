@@ -10,8 +10,8 @@ export default defineConfig({
       registerType: 'autoUpdate',
       devOptions: { enabled: true },
       manifest: {
-        name: 'Bore & Barrel',
-        short_name: 'Bore & Barrel',
+        name: 'Kelompok 24',
+        short_name: 'Kelompok 24',
         description: 'A small armory — pistols, rifles, and shotguns.',
         start_url: '/',
         scope: '/',

@@ -3,7 +3,7 @@ const NAV = ['Catalog', 'About', 'Contact']
 function Header({ tab, onTab }) {
   return (
     <header className="header">
-      <span className="brand display">Kelompok &amp; 24</span>
+      <span className="brand display">Kelompok 24</span>
       <nav className="nav">
         {NAV.map((item) => (
           <button

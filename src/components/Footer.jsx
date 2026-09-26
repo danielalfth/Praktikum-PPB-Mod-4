@@ -1,7 +1,7 @@
 function Footer() {
   return (
     <footer className="footer">
-      <p>Kelompok &amp; 24, 123 Range Road</p>
+      <p>Kelompok 24, 123 Range Road</p>
     </footer>
   )
 }
