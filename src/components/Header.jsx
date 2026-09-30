@@ -1,6 +1,10 @@
+import { useCart } from '../context/CartContext.jsx'
+
 const NAV = ['Catalog', 'About', 'Contact']
 
 function Header({ tab, onTab }) {
+  const { totalItems } = useCart()
+
   return (
     <header className="header">
       <span className="brand display">Kelompok 24</span>
@@ -15,6 +19,14 @@ function Header({ tab, onTab }) {
             {item}
           </button>
         ))}
+        <button
+          type="button"
+          className={tab === 'Cart' ? 'nav-link cart-link active' : 'nav-link cart-link'}
+          onClick={() => onTab('Cart')}
+        >
+          Cart
+          {totalItems > 0 && <span className="cart-badge">{totalItems}</span>}
+        </button>
       </nav>
     </header>
   )
